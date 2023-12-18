@@ -1,0 +1,19 @@
+#home {
+  padding: 50px 0;
+  font-family: "Poppins";
+  .container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .head {
+      display: flex;
+      p {
+        font-size: 15px;
+        font-weight: 600;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

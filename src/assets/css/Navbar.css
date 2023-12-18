@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Gabarito:wght@400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@400;500&family=Palanquin:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  border: 1px solid black;
+}
+.header .container {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  font-family: "Poppins";
+  gap: 20px;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .container .header-left {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.header .container .header-left .input {
+  background-color: #f0f3f5;
+  display: flex;
+  border-radius: 25px;
+}
+.header .container .header-left .input .inp {
+  padding: 7px;
+}
+.header .container .header-left .input .inp input {
+  font-size: 16px;
+  outline: none;
+  border: none;
+  color: rgba(0, 0, 0, 0.716);
+  background-color: #f0f3f5;
+  padding-left: 5px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  .header .container .header-left .input .inp input {
+    width: 270px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .header .container .header-left .input .inp input {
+    width: 160px;
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 612px) {
+  .header .container .header-left .input .inp input {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 487px) {
+  .header .container .header-left .input .inp input {
+    width: 60px;
+  }
+}
+.header .container .header-left .input .search {
+  background-color: #5e00d1;
+  padding: 5px 29px;
+  align-items: center;
+  display: flex;
+  border-radius: 25px;
+  cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  .header .container .header-left .input .search {
+    padding: 5px 24px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .header .container .header-left .input .search {
+    padding: 5px 19px;
+  }
+}
+.header .container .header-right {
+  display: flex;
+  gap: 30px;
+}
+@media screen and (max-width: 900px) {
+  .header .container .header-right {
+    gap: 5px;
+  }
+}
+@media screen and (max-width: 612px) {
+  .header .container .header-right {
+    font-size: 10px;
+  }
+}
+
+.navbar {
+  background-color: #fafbfc;
+}
+.navbar .container {
+  width: 85%;
+  margin: 0 auto;
+  font-family: "Poppins";
+  display: flex;
+  gap: 20px;
+  padding: 8px 0;
+  justify-content: flex-start;
+}
+.navbar .container .links {
+  display: flex;
+  gap: 38px;
+}
+.navbar .container .links Link:hover {
+  color: #5e00d1;
+}/*# sourceMappingURL=Navbar.css.map */

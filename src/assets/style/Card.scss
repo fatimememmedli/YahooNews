@@ -1,0 +1,162 @@
+.card {
+  display: flex;
+  padding: 18px 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  align-items: center;
+  gap: 15px;
+  border-radius: 10px;
+  @media screen and (max-width: 750px) {
+    align-items: center;
+  }
+  @media screen and (max-width: 604px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (max-width: 448px) {
+    width: 250px;
+    margin: 0 auto;
+  }
+  .image {
+    max-width: 300px;
+    max-height: 167px;
+    overflow: hidden;
+    border-radius: 15px;
+    @media screen and (max-width: 460px) {
+      max-width: 200px;
+      max-height: 110px;
+    }
+    @media screen and (max-width: 448px) {
+      max-width: 150px;
+      max-height: 80px;
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .card-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    width: 100%;
+    .category-date {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      #head {
+        font-size: small;
+        color: #1c73ffff;
+        font-weight: 500;
+        @media screen and (max-width: 900px) {
+          font-size: 8px;
+        }
+      }
+      #date {
+        font-size: small;
+        color: gray;
+        @media screen and (max-width: 900px) {
+          font-size: 8px;
+        }
+      }
+    }
+    .news-head {
+      font-weight: 700;
+      font-size: 19px;
+      color: #222930ff;
+      @media screen and (max-width: 900px) {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 750px) {
+        font-size: 13px;
+      }
+      @media screen and (max-width: 460px) {
+        font-size: 10px;
+      }
+      @media screen and (max-width: 448px) {
+        font-size: 8px;
+      }
+    }
+
+    .news {
+      font-size: 15px;
+      color: #222930ff;
+      @media screen and (max-width: 900px) {
+        font-size: 12px;
+      }
+      @media screen and (max-width: 750px) {
+        font-size: 11px;
+      }
+      @media screen and (max-width: 460px) {
+        font-size: 8px;
+      }
+      @media screen and (max-width: 448px) {
+        font-size: 6px;
+      }
+    }
+    .like-dislike-seen {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .seen {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        span {
+          color: rgb(62, 60, 60);
+          @media screen and (max-width: 900px) {
+            font-size: 11px;
+          }
+        }
+        .fa-eye {
+          color: gray;
+          @media screen and (max-width: 900px) {
+            font-size: 12px;
+          }
+        }
+      }
+      .like-dislike {
+        display: flex;
+        gap: 19px;
+        .like {
+          display: flex;
+          gap: 5px;
+          align-items: center;
+
+          .fa-thumbs-up {
+            color: gray;
+            cursor: pointer;
+            @media screen and (max-width: 900px) {
+              font-size: 12px;
+            }
+          }
+          span {
+            color: rgb(62, 60, 60);
+            @media screen and (max-width: 900px) {
+              font-size: 11px;
+            }
+          }
+        }
+        .dislike {
+          display: flex;
+          gap: 5px;
+          align-items: center;
+          .fa-thumbs-down {
+            color: gray;
+            cursor: pointer;
+
+            @media screen and (max-width: 900px) {
+              font-size: 12px;
+            }
+          }
+          span {
+            color: rgb(62, 60, 60);
+            @media screen and (max-width: 900px) {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
